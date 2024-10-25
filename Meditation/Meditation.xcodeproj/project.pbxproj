@@ -40,6 +40,12 @@
 		6B9A54562CCB0704005FCFF2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A54552CCB0704005FCFF2 /* RootViewController.swift */; };
 		6B9A545B2CCB226C005FCFF2 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A54592CCB226C005FCFF2 /* PracticeViewController.swift */; };
 		6B9A545C2CCB226C005FCFF2 /* PracticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A545A2CCB226C005FCFF2 /* PracticeViewController.xib */; };
+		6B9A54612CCB2BDC005FCFF2 /* FeelingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A545F2CCB2BDC005FCFF2 /* FeelingsViewController.swift */; };
+		6B9A54622CCB2BDC005FCFF2 /* FeelingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A54602CCB2BDC005FCFF2 /* FeelingsViewController.xib */; };
+		6B9A54642CCB2CA2005FCFF2 /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A54632CCB2CA2005FCFF2 /* BaseTextView.swift */; };
+		6BA6E7F72CCB34F200980CDD /* PracticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6E7F62CCB34F200980CDD /* PracticeModel.swift */; };
+		6BA6E7FA2CCB35D300980CDD /* PracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6E7F92CCB35D300980CDD /* PracticeViewModel.swift */; };
+		6BA6E7FD2CCB364C00980CDD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6E7FC2CCB364C00980CDD /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +85,12 @@
 		6B9A54552CCB0704005FCFF2 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		6B9A54592CCB226C005FCFF2 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		6B9A545A2CCB226C005FCFF2 /* PracticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeViewController.xib; sourceTree = "<group>"; };
+		6B9A545F2CCB2BDC005FCFF2 /* FeelingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsViewController.swift; sourceTree = "<group>"; };
+		6B9A54602CCB2BDC005FCFF2 /* FeelingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeelingsViewController.xib; sourceTree = "<group>"; };
+		6B9A54632CCB2CA2005FCFF2 /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		6BA6E7F62CCB34F200980CDD /* PracticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModel.swift; sourceTree = "<group>"; };
+		6BA6E7F92CCB35D300980CDD /* PracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewModel.swift; sourceTree = "<group>"; };
+		6BA6E7FC2CCB364C00980CDD /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FC4F290FD08824284A88DDA4 /* Pods-Meditation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation.release.xcconfig"; path = "Target Support Files/Pods-Meditation/Pods-Meditation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +136,8 @@
 		6B9A53F32CC95DFF005FCFF2 /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
+				6BA6E7FB2CCB364000980CDD /* CoreData */,
+				6B9A545D2CCB2BC4005FCFF2 /* Feelings */,
 				6B9A54572CCB2253005FCFF2 /* Practice */,
 				6B9A54262CC9854A005FCFF2 /* Sound */,
 				6B9A54192CC97C2E005FCFF2 /* Menu */,
@@ -146,6 +160,7 @@
 				6B9A54152CC97A99005FCFF2 /* UIView.swift */,
 				6B9A543E2CC98FE1005FCFF2 /* ViewController.swift */,
 				6B9A54172CC97AD3005FCFF2 /* GradientButton.swift */,
+				6B9A54632CCB2CA2005FCFF2 /* BaseTextView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,6 +242,8 @@
 		6B9A54572CCB2253005FCFF2 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				6BA6E7F82CCB35C300980CDD /* ViewModel */,
+				6BA6E7F52CCB34E600980CDD /* Model */,
 				6B9A54582CCB2260005FCFF2 /* View */,
 			);
 			path = Practice;
@@ -239,6 +256,47 @@
 				6B9A545A2CCB226C005FCFF2 /* PracticeViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6B9A545D2CCB2BC4005FCFF2 /* Feelings */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A545E2CCB2BCE005FCFF2 /* View */,
+			);
+			path = Feelings;
+			sourceTree = "<group>";
+		};
+		6B9A545E2CCB2BCE005FCFF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A545F2CCB2BDC005FCFF2 /* FeelingsViewController.swift */,
+				6B9A54602CCB2BDC005FCFF2 /* FeelingsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BA6E7F52CCB34E600980CDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BA6E7F62CCB34F200980CDD /* PracticeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BA6E7F82CCB35C300980CDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BA6E7F92CCB35D300980CDD /* PracticeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BA6E7FB2CCB364000980CDD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6BA6E7FC2CCB364C00980CDD /* CoreDataManager.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		C692A4EE5BAF6D21BDF8BC4C /* Frameworks */ = {
@@ -333,6 +391,7 @@
 				6B9A544F2CC9B63E005FCFF2 /* deep-immersion.mp3 in Resources */,
 				6B9A54462CC9B614005FCFF2 /* shrine.mp3 in Resources */,
 				6B9A54252CC983EB005FCFF2 /* futuresporecyrillic.otf in Resources */,
+				6B9A54622CCB2BDC005FCFF2 /* FeelingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,12 +446,17 @@
 			files = (
 				6B9A545B2CCB226C005FCFF2 /* PracticeViewController.swift in Sources */,
 				6B9A542B2CC98601005FCFF2 /* SoundsViewController.swift in Sources */,
+				6B9A54642CCB2CA2005FCFF2 /* BaseTextView.swift in Sources */,
 				6B9A54182CC97AD3005FCFF2 /* GradientButton.swift in Sources */,
+				6B9A54612CCB2BDC005FCFF2 /* FeelingsViewController.swift in Sources */,
 				6B9A53F92CC95DFF005FCFF2 /* MenuViewController.swift in Sources */,
+				6BA6E7FD2CCB364C00980CDD /* CoreDataManager.swift in Sources */,
+				6BA6E7FA2CCB35D300980CDD /* PracticeViewModel.swift in Sources */,
 				6B9A54562CCB0704005FCFF2 /* RootViewController.swift in Sources */,
 				6B9A543F2CC98FE1005FCFF2 /* ViewController.swift in Sources */,
 				6B9A53FF2CC95DFF005FCFF2 /* Meditation.xcdatamodeld in Sources */,
 				6B9A54102CC95EEC005FCFF2 /* Font.swift in Sources */,
+				6BA6E7F72CCB34F200980CDD /* PracticeModel.swift in Sources */,
 				6B9A54352CC98AFB005FCFF2 /* SoundTableViewCell.swift in Sources */,
 				6B9A54422CC9B3A6005FCFF2 /* SoundsViewModel.swift in Sources */,
 				6B9A53F52CC95DFF005FCFF2 /* AppDelegate.swift in Sources */,
@@ -475,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -532,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

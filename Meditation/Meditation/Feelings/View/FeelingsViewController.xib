@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeelingsViewController" customModule="Meditation" customModuleProvider="target">
+            <connections>
+                <outlet property="feelingsTextView" destination="kec-8i-c3X" id="cs9-j0-yDi"/>
+                <outlet property="smileTitle" destination="Nes-9V-TcZ" id="ezY-FE-acp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kec-8i-c3X" customClass="BaseTextView" customModule="Meditation" customModuleProvider="target">
+                    <rect key="frame" x="46" y="83" width="301" height="268"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="268" id="xxm-i7-2TA"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your feelings during the practice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nes-9V-TcZ">
+                    <rect key="frame" x="73.333333333333329" y="375" width="246.66666666666669" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="77z-sf-H0H">
+                    <rect key="frame" x="39.666666666666657" y="406" width="314" height="60"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJO-tO-r89">
+                            <rect key="frame" x="0.0" y="0.0" width="49" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="W4Y-Yf-6ZU"/>
+                                <constraint firstAttribute="width" constant="49" id="gbP-KV-ht5"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="smile1"/>
+                            <connections>
+                                <action selector="chooseSmile:" destination="-1" eventType="touchUpInside" id="Ek7-Ob-b1l"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCk-0z-OgS">
+                            <rect key="frame" x="67" y="0.0" width="46" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="1f2-LE-Hs2"/>
+                                <constraint firstAttribute="height" constant="60" id="wtv-7a-JVm"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="smile2"/>
+                            <connections>
+                                <action selector="chooseSmile:" destination="-1" eventType="touchUpInside" id="1JU-cg-i6j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeA-ex-LhG">
+                            <rect key="frame" x="131" y="0.0" width="45" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="6ed-Wl-Aes"/>
+                                <constraint firstAttribute="height" constant="60" id="aTp-9y-gSR"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="smile3"/>
+                            <connections>
+                                <action selector="chooseSmile:" destination="-1" eventType="touchUpInside" id="f01-fL-dTY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyw-mr-XmG">
+                            <rect key="frame" x="194" y="0.0" width="47" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="47" id="a6q-kv-pKk"/>
+                                <constraint firstAttribute="height" constant="60" id="rJy-B9-Ayy"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="smile4"/>
+                            <connections>
+                                <action selector="chooseSmile:" destination="-1" eventType="touchUpInside" id="LgT-FD-zvT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYg-xb-Vbo">
+                            <rect key="frame" x="259" y="0.0" width="55" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="CJD-tG-qlO"/>
+                                <constraint firstAttribute="height" constant="60" id="UYd-Ye-Lja"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="smile5"/>
+                            <connections>
+                                <action selector="chooseSmile:" destination="-1" eventType="touchUpInside" id="mKi-Go-AjU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4F-XB-hbb" customClass="GradientButton" customModule="Meditation" customModuleProvider="target">
+                    <rect key="frame" x="44" y="710" width="305" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="U2W-hP-L1q"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="save"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="Nes-9V-TcZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2gt-ix-DbK"/>
+                <constraint firstItem="77z-sf-H0H" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7ps-tU-39z"/>
+                <constraint firstItem="Nes-9V-TcZ" firstAttribute="top" secondItem="kec-8i-c3X" secondAttribute="bottom" constant="24" id="ChF-tC-mwt"/>
+                <constraint firstItem="Nes-9V-TcZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="JNq-zi-BeA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kec-8i-c3X" secondAttribute="trailing" constant="46" id="KS2-ak-bdy"/>
+                <constraint firstItem="Z4F-XB-hbb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="77z-sf-H0H" secondAttribute="bottom" constant="24" id="TBp-x1-xYk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Z4F-XB-hbb" secondAttribute="bottom" constant="44" id="Xav-wF-dOo"/>
+                <constraint firstItem="kec-8i-c3X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="Y21-8t-ncX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z4F-XB-hbb" secondAttribute="trailing" constant="44" id="cMa-dz-Amf"/>
+                <constraint firstItem="kec-8i-c3X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="ej9-35-QoW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nes-9V-TcZ" secondAttribute="trailing" constant="8" id="inb-Ba-U77"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="77z-sf-H0H" secondAttribute="trailing" constant="8" id="ljn-ot-RKv"/>
+                <constraint firstItem="77z-sf-H0H" firstAttribute="top" secondItem="Nes-9V-TcZ" secondAttribute="bottom" constant="10.666666666666686" id="r3N-Dj-uP7"/>
+                <constraint firstItem="Z4F-XB-hbb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="44" id="rM5-xR-cGQ"/>
+                <constraint firstItem="77z-sf-H0H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="z24-65-18t"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="GU1-WH-i7c" appends="YES" id="1OZ-g1-fon"/>
+            </connections>
+            <point key="canvasLocation" x="110.68702290076335" y="19.718309859154932"/>
+        </view>
+        <tapGestureRecognizer id="GU1-WH-i7c">
+            <connections>
+                <action selector="handleTapGesture:" destination="-1" id="OvJ-EN-8Xu"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="smile1" width="49" height="60"/>
+        <image name="smile2" width="46" height="60"/>
+        <image name="smile3" width="45" height="60"/>
+        <image name="smile4" width="47" height="60"/>
+        <image name="smile5" width="55" height="60"/>
+        <namedColor name="background">
+            <color red="1" green="0.72899997234344482" blue="0.33700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -77,5 +77,9 @@ class PracticeViewController: UIViewController {
     }
     
     @IBAction func clickedStop(_ sender: UIButton) {
+        PracticeViewModel.shared.practiceModel.duration = Int64(timer?.timeInterval ?? 0)
+        stopStopwatch()
+        let feelingsVC = FeelingsViewController(nibName: "FeelingsViewController", bundle: nil)
+        self.navigationController?.pushViewController(feelingsVC, animated: true)
     }
 }
