@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatisticsViewController" customModule="Meditation" customModuleProvider="target">
+            <connections>
+                <outlet property="practicsTableView" destination="dBa-EG-o8M" id="TGl-hT-nk5"/>
+                <outlet property="statisticsTextView" destination="DWg-TW-VVB" id="hEg-Iy-n55"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-EG-o8M">
+                    <rect key="frame" x="0.0" y="83" width="393" height="451"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-B7-t2f">
+                    <rect key="frame" x="0.0" y="542" width="393" height="232"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="statistics" translatesAutoresizingMaskIntoConstraints="NO" id="9Ii-Fr-cFk">
+                            <rect key="frame" x="0.0" y="8" width="393" height="216"/>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="You've been practicing for 78 hours and 13 seconds all the time" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWg-TW-VVB">
+                            <rect key="frame" x="60" y="77" width="273" height="113"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="273" id="awV-QO-l5q"/>
+                                <constraint firstAttribute="height" constant="113" id="prz-Sd-7sv"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="DWg-TW-VVB" firstAttribute="centerX" secondItem="TVy-B7-t2f" secondAttribute="centerX" id="Buj-GV-Phq"/>
+                        <constraint firstAttribute="trailing" secondItem="9Ii-Fr-cFk" secondAttribute="trailing" id="IVu-QZ-8Tq"/>
+                        <constraint firstAttribute="bottom" secondItem="9Ii-Fr-cFk" secondAttribute="bottom" constant="8" id="LKb-cd-9Kf"/>
+                        <constraint firstAttribute="bottom" secondItem="DWg-TW-VVB" secondAttribute="bottom" constant="42" id="ZnH-fS-RXJ"/>
+                        <constraint firstAttribute="height" constant="232" id="iHB-7g-qLZ"/>
+                        <constraint firstItem="9Ii-Fr-cFk" firstAttribute="top" secondItem="TVy-B7-t2f" secondAttribute="top" constant="8" id="mSw-Xj-Wrh"/>
+                        <constraint firstItem="9Ii-Fr-cFk" firstAttribute="leading" secondItem="TVy-B7-t2f" secondAttribute="leading" id="ofM-93-4i0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="TVy-B7-t2f" firstAttribute="top" secondItem="dBa-EG-o8M" secondAttribute="bottom" constant="8" symbolic="YES" id="43R-Me-fgN"/>
+                <constraint firstItem="dBa-EG-o8M" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="50I-he-wpw"/>
+                <constraint firstItem="TVy-B7-t2f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QbW-LU-w3I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dBa-EG-o8M" secondAttribute="trailing" id="UF3-BO-d5w"/>
+                <constraint firstItem="dBa-EG-o8M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VgX-LR-UVC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TVy-B7-t2f" secondAttribute="trailing" id="fv2-KM-8Pt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TVy-B7-t2f" secondAttribute="bottom" constant="44" id="ldG-5h-zj1"/>
+            </constraints>
+            <point key="canvasLocation" x="110.68702290076335" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="statistics" width="390" height="232"/>
+        <namedColor name="background">
+            <color red="1" green="0.72899997234344482" blue="0.33700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

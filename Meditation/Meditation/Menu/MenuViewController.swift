@@ -19,6 +19,7 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func clickedStatistics(_ sender: UIButton) {
+        self.pushViewController(StatisticsViewController.self, animated: true)
     }
     
     @IBAction func clickedInfo(_ sender: UIButton) {

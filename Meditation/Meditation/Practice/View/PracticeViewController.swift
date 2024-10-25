@@ -10,6 +10,7 @@ import UIKit
 class PracticeViewController: UIViewController {
     
     @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var pauseButton: UIButton!
     var timer: Timer?
     var elapsedTime: TimeInterval = 0
     var isRunning = false
@@ -17,6 +18,7 @@ class PracticeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        startStopwatch()
     }
     
     func setupUI() {
@@ -29,7 +31,6 @@ class PracticeViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        startStopwatch()
     }
     
     func startStopwatch() {
@@ -70,6 +71,7 @@ class PracticeViewController: UIViewController {
     @IBAction func clickedPauseResume(_ sender: UIButton) {
         if sender.isSelected {
             resumeStopwatch()
+            SoundsViewModel.shared.resume()
         } else {
             pauseStopwatch()
         }
@@ -77,8 +79,10 @@ class PracticeViewController: UIViewController {
     }
     
     @IBAction func clickedStop(_ sender: UIButton) {
-        PracticeViewModel.shared.practiceModel.duration = Int64(timer?.timeInterval ?? 0)
-        stopStopwatch()
+        pauseButton.isSelected = true
+        PracticeViewModel.shared.practiceModel.duration = Int64(elapsedTime)
+        pauseStopwatch()
+        SoundsViewModel.shared.pause()
         let feelingsVC = FeelingsViewController(nibName: "FeelingsViewController", bundle: nil)
         self.navigationController?.pushViewController(feelingsVC, animated: true)
     }

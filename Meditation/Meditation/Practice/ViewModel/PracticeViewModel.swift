@@ -9,10 +9,16 @@ import Foundation
 
 class PracticeViewModel {
     static let shared = PracticeViewModel()
-    var practiceModel = PracticeModel(id: UUID())
+    @Published var practiceModel = PracticeModel(id: UUID(), date: Date())
     private init() {}
     
+    func save(completion: @escaping (Error?) -> Void) {
+        CoreDataManager.shared.savePractice(practiceModel: practiceModel) { error in
+            completion(error)
+        }
+    }
+    
     func clear() {
-        practiceModel = PracticeModel(id: UUID())
+        practiceModel = PracticeModel(id: UUID(), date: Date())
     }
 }

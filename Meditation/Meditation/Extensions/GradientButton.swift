@@ -9,6 +9,12 @@ import UIKit
 
 class GradientButton: UIButton {
     
+    override var isEnabled: Bool {
+        didSet {
+            self.alpha = isEnabled ? 1 : 0.4
+        }
+    }
+    
     override init(frame: CGRect) {
          super.init(frame: frame)
         commonInit()

@@ -20,4 +20,8 @@ extension UIFont {
     static func futurespore(size: CFloat) -> UIFont? {
         return UIFont(name: "futuresporecyrillic", size: CGFloat(size))
     }
+    
+    static func mondaRegular(size: CFloat) -> UIFont? {
+        return UIFont(name: "Monda-Regular", size: CGFloat(size))
+    }
 }

@@ -86,6 +86,27 @@ class SoundsViewModel {
         player.play()
     }
     
+    func stopPlayer() {
+        if let currentSound = currentSoundName, let player = audioPlayers[currentSound] {
+            player.stop()
+            player.currentTime = 0
+        }
+    }
+    
+    func pause() {
+        if let currentSound = currentSoundName, let player = audioPlayers[currentSound] {
+            player.pause()
+        }
+    }
+    
+    func resume() {
+        if let currentSound = currentSoundName, let player = audioPlayers[currentSound] {
+            if !player.isPlaying {
+                player.play()
+            }
+        }
+    }
+    
     private func startProgressUpdates(for player: AVAudioPlayer, onProgress: @escaping (AVAudioPlayer) -> Void) {
         progressUpdateTimer?.invalidate()
         progressUpdateTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in

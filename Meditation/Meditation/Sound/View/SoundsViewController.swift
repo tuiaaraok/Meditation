@@ -25,6 +25,10 @@ class SoundsViewController: UIViewController {
         let practiceVC = PracticeViewController(nibName: "PracticeViewController", bundle: nil)
         self.navigationController?.pushViewController(practiceVC, animated: true)
     }
+    
+    deinit {
+        viewModel.stopPlayer()
+    }
 }
 
 extension SoundsViewController: UITableViewDelegate, UITableViewDataSource {

@@ -39,7 +39,7 @@ class CoreDataManager {
                     practice.id = id
                 }
                 practice.date = practiceModel.date
-                practice.duration = practiceModel.duration
+                practice.duration = practiceModel.duration ?? 0
                 practice.feelings = Int32(practiceModel.feelings ?? 0)
                 practice.feelingsDescription = practiceModel.feelingsDescription
                 try backgroundContext.save()

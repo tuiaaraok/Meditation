@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeelingsViewController" customModule="Meditation" customModuleProvider="target">
             <connections>
                 <outlet property="feelingsTextView" destination="kec-8i-c3X" id="cs9-j0-yDi"/>
+                <outlet property="saveButton" destination="Z4F-XB-hbb" id="qR6-ts-Hi3"/>
                 <outlet property="smileTitle" destination="Nes-9V-TcZ" id="ezY-FE-acp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -110,6 +111,9 @@
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="save"/>
+                    <connections>
+                        <action selector="clickedSave:" destination="-1" eventType="touchUpInside" id="HzX-V2-0N2"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
