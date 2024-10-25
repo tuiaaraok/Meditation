@@ -22,6 +22,8 @@ class SoundsViewController: UIViewController {
     }
     
     @IBAction func clickedStart(_ sender: GradientButton) {
+        let practiceVC = PracticeViewController(nibName: "PracticeViewController", bundle: nil)
+        self.navigationController?.pushViewController(practiceVC, animated: true)
     }
 }
 
