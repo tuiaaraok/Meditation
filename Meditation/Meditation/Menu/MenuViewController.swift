@@ -11,10 +11,17 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     @IBAction func clickedStart(_ sender: UIButton) {
+        self.pushViewController(SoundsViewController.self, animated: true)
     }
     
+    @IBAction func clickedStatistics(_ sender: UIButton) {
+    }
+    
+    @IBAction func clickedInfo(_ sender: UIButton) {
+    }
 }
 

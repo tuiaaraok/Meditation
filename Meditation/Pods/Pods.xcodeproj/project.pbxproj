@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CEBCEB0E77F2AF6AE645922304027CC /* FDWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46202C4F69D9EEFED0DBC7A93FAFEE4E /* FDWaveformView.swift */; };
+		3F3F0DA683732437A6C077266062E45D /* FDWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 746E1204EE238BE9649E1127E7B29985 /* FDWaveformView-dummy.m */; };
+		56540F423608B4E4CED2D07097F7C628 /* Pods-Meditation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 952098AB91240EEAC9A49AD69C664749 /* Pods-Meditation-dummy.m */; };
+		702DEF8337E97A08AE193FAC50EFA7D1 /* Pods-Meditation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B4512FD865AA03D189EC92E0B79153 /* Pods-Meditation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFA97C7C8708A0EAFD6882A22F7F93FC /* FDAudioContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91243AB806A2757DAC4478E5DFE4BD8D /* FDAudioContext.swift */; };
+		B372F52619ED364AA76A70F0096DD613 /* FDWaveformRenderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C87513A0C243670AF17C112E05B6915 /* FDWaveformRenderOperation.swift */; };
+		DDAF3CBDE64C8A7093F89ED2F4CF369E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DF7C04AAE33872389C00D34A3F6DCC3E /* FDWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1985E9F6E6FE502520539A14D006A15 /* FDWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F255BEECB7FC2E3E4A2DBD4E7F0C4764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B334719803272EC7C4FB3655C4E33E50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5840841663803463606987C39C891DD4;
+			remoteInfo = FDWaveformView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13A0619A4AE76022C6215C7CB6791893 /* Pods-Meditation */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Meditation"; path = Pods_Meditation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C555C5E634DEACFE733098A7118663F /* Pods-Meditation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meditation-acknowledgements.plist"; sourceTree = "<group>"; };
+		421898B8F0B93922BEAB6517B41583A0 /* Pods-Meditation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meditation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46202C4F69D9EEFED0DBC7A93FAFEE4E /* FDWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FDWaveformView.swift; path = Sources/FDWaveformView/FDWaveformView.swift; sourceTree = "<group>"; };
+		5C87513A0C243670AF17C112E05B6915 /* FDWaveformRenderOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FDWaveformRenderOperation.swift; path = Sources/FDWaveformView/FDWaveformRenderOperation.swift; sourceTree = "<group>"; };
+		7074FAA694E94B7C58605BBF2032D853 /* FDWaveformView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FDWaveformView-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		746E1204EE238BE9649E1127E7B29985 /* FDWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FDWaveformView-dummy.m"; sourceTree = "<group>"; };
+		7E48ED338F8C6196547A92A410E43E35 /* FDWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FDWaveformView.modulemap; sourceTree = "<group>"; };
+		81F7F64049B88EE02DFCAB56DD51A7D6 /* FDWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FDWaveformView-prefix.pch"; sourceTree = "<group>"; };
+		82B4512FD865AA03D189EC92E0B79153 /* Pods-Meditation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meditation-umbrella.h"; sourceTree = "<group>"; };
+		8D254479631BD2A3D7A9C7CAEAE0DC2A /* Pods-Meditation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Meditation-frameworks.sh"; sourceTree = "<group>"; };
+		91243AB806A2757DAC4478E5DFE4BD8D /* FDAudioContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FDAudioContext.swift; path = Sources/FDWaveformView/FDAudioContext.swift; sourceTree = "<group>"; };
+		952098AB91240EEAC9A49AD69C664749 /* Pods-Meditation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meditation-dummy.m"; sourceTree = "<group>"; };
+		9779A117ADFB7F7B3F31BC8B2096D574 /* Pods-Meditation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meditation.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A15CEBF412ED4A7EE7DD17F1A0A14543 /* Pods-Meditation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meditation.modulemap"; sourceTree = "<group>"; };
+		A1985E9F6E6FE502520539A14D006A15 /* FDWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FDWaveformView-umbrella.h"; sourceTree = "<group>"; };
+		A5CCAF6069C94C9539A50900E71ACC12 /* FDWaveformView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FDWaveformView; path = FDWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1A98C9C41899330050E1E430372301 /* Pods-Meditation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meditation.debug.xcconfig"; sourceTree = "<group>"; };
+		D4D8778898611E41378AB35667599325 /* Pods-Meditation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meditation-Info.plist"; sourceTree = "<group>"; };
+		EA4322E2571B75311532BDF2B2EE7900 /* FDWaveformView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FDWaveformView.release.xcconfig; sourceTree = "<group>"; };
+		F61E87D2CDD8BCECDDD7B3B3BFB020B9 /* FDWaveformView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FDWaveformView.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68A2E437D041386D558C6E0E96D7050C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F255BEECB7FC2E3E4A2DBD4E7F0C4764 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB50E4D314CF18632B582EC23EE829CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAF3CBDE64C8A7093F89ED2F4CF369E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42D6601D18966B63D298410BB39099DC /* Pods-Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				A15CEBF412ED4A7EE7DD17F1A0A14543 /* Pods-Meditation.modulemap */,
+				421898B8F0B93922BEAB6517B41583A0 /* Pods-Meditation-acknowledgements.markdown */,
+				1C555C5E634DEACFE733098A7118663F /* Pods-Meditation-acknowledgements.plist */,
+				952098AB91240EEAC9A49AD69C664749 /* Pods-Meditation-dummy.m */,
+				8D254479631BD2A3D7A9C7CAEAE0DC2A /* Pods-Meditation-frameworks.sh */,
+				D4D8778898611E41378AB35667599325 /* Pods-Meditation-Info.plist */,
+				82B4512FD865AA03D189EC92E0B79153 /* Pods-Meditation-umbrella.h */,
+				AC1A98C9C41899330050E1E430372301 /* Pods-Meditation.debug.xcconfig */,
+				9779A117ADFB7F7B3F31BC8B2096D574 /* Pods-Meditation.release.xcconfig */,
+			);
+			name = "Pods-Meditation";
+			path = "Target Support Files/Pods-Meditation";
+			sourceTree = "<group>";
+		};
+		498BE1ADD6FD7C61BEE853A3DB575A19 /* FDWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				91243AB806A2757DAC4478E5DFE4BD8D /* FDAudioContext.swift */,
+				5C87513A0C243670AF17C112E05B6915 /* FDWaveformRenderOperation.swift */,
+				46202C4F69D9EEFED0DBC7A93FAFEE4E /* FDWaveformView.swift */,
+				681E350DE11205CDB0926C878A8635E1 /* Support Files */,
+			);
+			name = FDWaveformView;
+			path = FDWaveformView;
+			sourceTree = "<group>";
+		};
+		5289B271CE43A7CB7E9C80BDDA2E0795 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42D6601D18966B63D298410BB39099DC /* Pods-Meditation */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		681E350DE11205CDB0926C878A8635E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E48ED338F8C6196547A92A410E43E35 /* FDWaveformView.modulemap */,
+				746E1204EE238BE9649E1127E7B29985 /* FDWaveformView-dummy.m */,
+				7074FAA694E94B7C58605BBF2032D853 /* FDWaveformView-Info.plist */,
+				81F7F64049B88EE02DFCAB56DD51A7D6 /* FDWaveformView-prefix.pch */,
+				A1985E9F6E6FE502520539A14D006A15 /* FDWaveformView-umbrella.h */,
+				F61E87D2CDD8BCECDDD7B3B3BFB020B9 /* FDWaveformView.debug.xcconfig */,
+				EA4322E2571B75311532BDF2B2EE7900 /* FDWaveformView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FDWaveformView";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DB8368D66A33A7A5A10C9E5AA2273C76 /* Pods */,
+				FC98377F12F4AA758573F88B46EECF88 /* Products */,
+				5289B271CE43A7CB7E9C80BDDA2E0795 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB8368D66A33A7A5A10C9E5AA2273C76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				498BE1ADD6FD7C61BEE853A3DB575A19 /* FDWaveformView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC98377F12F4AA758573F88B46EECF88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5CCAF6069C94C9539A50900E71ACC12 /* FDWaveformView */,
+				13A0619A4AE76022C6215C7CB6791893 /* Pods-Meditation */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C278DBCCEF42FB9848BF85AFD7859BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702DEF8337E97A08AE193FAC50EFA7D1 /* Pods-Meditation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1CB24D97B0521C4DF3FCA984467C60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7C04AAE33872389C00D34A3F6DCC3E /* FDWaveformView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5840841663803463606987C39C891DD4 /* FDWaveformView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46481EC8B6C8B244A7EDBD8DBAF305A /* Build configuration list for PBXNativeTarget "FDWaveformView" */;
+			buildPhases = (
+				BB1CB24D97B0521C4DF3FCA984467C60 /* Headers */,
+				FF3F7B48AD98513831FDC62CB99AF672 /* Sources */,
+				68A2E437D041386D558C6E0E96D7050C /* Frameworks */,
+				FE8F0E5FC8021D7DB61DD27761E6CEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FDWaveformView;
+			productName = FDWaveformView;
+			productReference = A5CCAF6069C94C9539A50900E71ACC12 /* FDWaveformView */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E93DA3B181FEA3D0CDCF61B62AAB7DD /* Pods-Meditation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5577AFB19EB70A9F344E2DD3E89F94 /* Build configuration list for PBXNativeTarget "Pods-Meditation" */;
+			buildPhases = (
+				0C278DBCCEF42FB9848BF85AFD7859BB /* Headers */,
+				94D5F57DC0F92731BA404D8516535D8C /* Sources */,
+				CB50E4D314CF18632B582EC23EE829CC /* Frameworks */,
+				78EB7E617379D2621EC1A3E8ABE218A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A3942927532FB2DC0122D8B4A7BB4C3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Meditation";
+			productName = Pods_Meditation;
+			productReference = 13A0619A4AE76022C6215C7CB6791893 /* Pods-Meditation */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FC98377F12F4AA758573F88B46EECF88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5840841663803463606987C39C891DD4 /* FDWaveformView */,
+				7E93DA3B181FEA3D0CDCF61B62AAB7DD /* Pods-Meditation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78EB7E617379D2621EC1A3E8ABE218A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8F0E5FC8021D7DB61DD27761E6CEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94D5F57DC0F92731BA404D8516535D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56540F423608B4E4CED2D07097F7C628 /* Pods-Meditation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F7B48AD98513831FDC62CB99AF672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA97C7C8708A0EAFD6882A22F7F93FC /* FDAudioContext.swift in Sources */,
+				B372F52619ED364AA76A70F0096DD613 /* FDWaveformRenderOperation.swift in Sources */,
+				0CEBCEB0E77F2AF6AE645922304027CC /* FDWaveformView.swift in Sources */,
+				3F3F0DA683732437A6C077266062E45D /* FDWaveformView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A3942927532FB2DC0122D8B4A7BB4C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FDWaveformView;
+			target = 5840841663803463606987C39C891DD4 /* FDWaveformView */;
+			targetProxy = B334719803272EC7C4FB3655C4E33E50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		119D25BC8590F02A997CE3B28DA2EFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		55C0948586E3249129D75B1ECB5F48C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC1A98C9C41899330050E1E430372301 /* Pods-Meditation.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Meditation/Pods-Meditation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meditation/Pods-Meditation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F4225877C794ABEB78776F47754104E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7C6F73E20687EC0F34383C3136A7285D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9779A117ADFB7F7B3F31BC8B2096D574 /* Pods-Meditation.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Meditation/Pods-Meditation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meditation/Pods-Meditation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6A15CD074502A621FC7CD36F5627DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61E87D2CDD8BCECDDD7B3B3BFB020B9 /* FDWaveformView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FDWaveformView/FDWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FDWaveformView/FDWaveformView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FDWaveformView/FDWaveformView.modulemap";
+				PRODUCT_MODULE_NAME = FDWaveformView;
+				PRODUCT_NAME = FDWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD3D3F7D3BCAE60D50D287D2079D2CD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4322E2571B75311532BDF2B2EE7900 /* FDWaveformView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FDWaveformView/FDWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FDWaveformView/FDWaveformView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FDWaveformView/FDWaveformView.modulemap";
+				PRODUCT_MODULE_NAME = FDWaveformView;
+				PRODUCT_NAME = FDWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119D25BC8590F02A997CE3B28DA2EFA5 /* Debug */,
+				6F4225877C794ABEB78776F47754104E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46481EC8B6C8B244A7EDBD8DBAF305A /* Build configuration list for PBXNativeTarget "FDWaveformView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A15CD074502A621FC7CD36F5627DC0 /* Debug */,
+				DD3D3F7D3BCAE60D50D287D2079D2CD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5577AFB19EB70A9F344E2DD3E89F94 /* Build configuration list for PBXNativeTarget "Pods-Meditation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C0948586E3249129D75B1ECB5F48C5 /* Debug */,
+				7C6F73E20687EC0F34383C3136A7285D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="38" id="KGk-i7-Jjw" customClass="SoundTableViewCell" customModule="Meditation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1to-WP-wF3">
+                        <rect key="frame" x="18" y="0.0" width="37" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="J0b-tb-N3A"/>
+                            <constraint firstAttribute="height" constant="37" id="mhp-rS-heq"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="play"/>
+                        <state key="selected" image="pause"/>
+                        <connections>
+                            <action selector="clickedStartStop:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="viP-3f-Ja6"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cd-Wy-BvQ">
+                        <rect key="frame" x="95" y="0.0" width="207" height="37"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:58" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWZ-sl-aqV">
+                                <rect key="frame" x="153" y="10" width="38" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="Ahh-s1-B9J"/>
+                                    <constraint firstAttribute="height" constant="16" id="HrJ-AC-yZL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gWZ-sl-aqV" secondAttribute="trailing" constant="16" id="g0x-eS-ira"/>
+                            <constraint firstItem="gWZ-sl-aqV" firstAttribute="top" secondItem="6cd-Wy-BvQ" secondAttribute="top" constant="10" id="xyg-P8-26i"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1to-WP-wF3" secondAttribute="bottom" id="R4t-1x-Mgw"/>
+                    <constraint firstItem="6cd-Wy-BvQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Sep-jk-A12"/>
+                    <constraint firstItem="1to-WP-wF3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="UYN-tp-Wlk"/>
+                    <constraint firstAttribute="bottom" secondItem="6cd-Wy-BvQ" secondAttribute="bottom" id="WUn-dg-hyJ"/>
+                    <constraint firstItem="6cd-Wy-BvQ" firstAttribute="leading" secondItem="1to-WP-wF3" secondAttribute="trailing" constant="40" id="gMG-x8-bHT"/>
+                    <constraint firstItem="1to-WP-wF3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mqS-Sa-Xh6"/>
+                    <constraint firstAttribute="trailing" secondItem="6cd-Wy-BvQ" secondAttribute="trailing" constant="18" id="qPP-Ck-Qjx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="durationLabel" destination="gWZ-sl-aqV" id="CZE-Df-AEh"/>
+                <outlet property="playPauseButton" destination="1to-WP-wF3" id="RKd-my-0s3"/>
+                <outlet property="waveformBgView" destination="6cd-Wy-BvQ" id="N99-n4-gDn"/>
+            </connections>
+            <point key="canvasLocation" x="117.55725190839694" y="17.253521126760564"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pause" width="37" height="37"/>
+        <image name="play" width="37" height="37"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

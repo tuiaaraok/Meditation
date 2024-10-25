@@ -1,0 +1,16 @@
+PODS:
+  - FDWaveformView (5.0.1)
+
+DEPENDENCIES:
+  - FDWaveformView
+
+SPEC REPOS:
+  trunk:
+    - FDWaveformView
+
+SPEC CHECKSUMS:
+  FDWaveformView: c188be613947273cc83d6f0056505f60e6c4b9ac
+
+PODFILE CHECKSUM: e7e8e4dd03cb6fd7bbc4b5651bafffdda47cd9b2
+
+COCOAPODS: 1.15.2
