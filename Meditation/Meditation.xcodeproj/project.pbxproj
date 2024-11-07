@@ -54,6 +54,10 @@
 		6BA6E80F2CCB41E700980CDD /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6E80E2CCB41E700980CDD /* StatisticsViewModel.swift */; };
 		6BA6E8112CCB444300980CDD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6E8102CCB444300980CDD /* String.swift */; };
 		6BA6E8132CCB54AE00980CDD /* Monda-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA6E8122CCB54AD00980CDD /* Monda-Regular.ttf */; };
+		6BC2CA192CDB8C4D00D8EC6B /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 6BC2CA182CDB8C4D00D8EC6B /* codemagic.yaml */; };
+		6BC2CA1C2CDB947B00D8EC6B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2CA1B2CDB947B00D8EC6B /* WebViewController.swift */; };
+		6BC2CA1E2CDBB7E100D8EC6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BC2CA1D2CDBB7E100D8EC6B /* GoogleService-Info.plist */; };
+		6BC2CA202CDC903100D8EC6B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2CA1F2CDC903100D8EC6B /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +111,10 @@
 		6BA6E80E2CCB41E700980CDD /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 		6BA6E8102CCB444300980CDD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		6BA6E8122CCB54AD00980CDD /* Monda-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monda-Regular.ttf"; sourceTree = "<group>"; };
+		6BC2CA182CDB8C4D00D8EC6B /* codemagic.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
+		6BC2CA1B2CDB947B00D8EC6B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6BC2CA1D2CDBB7E100D8EC6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6BC2CA1F2CDC903100D8EC6B /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		FC4F290FD08824284A88DDA4 /* Pods-Meditation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation.release.xcconfig"; path = "Target Support Files/Pods-Meditation/Pods-Meditation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +142,7 @@
 		6B9A53E82CC95DFF005FCFF2 = {
 			isa = PBXGroup;
 			children = (
+				6BC2CA182CDB8C4D00D8EC6B /* codemagic.yaml */,
 				6B9A53F32CC95DFF005FCFF2 /* Meditation */,
 				6B9A53F22CC95DFF005FCFF2 /* Products */,
 				32CF4690294C9A824E84C999 /* Pods */,
@@ -152,6 +161,7 @@
 		6B9A53F32CC95DFF005FCFF2 /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
+				6BC2CA1A2CDB945100D8EC6B /* WebView */,
 				6BA6E7FE2CCB3B7700980CDD /* Statistics */,
 				6BA6E7FB2CCB364000980CDD /* CoreData */,
 				6B9A545D2CCB2BC4005FCFF2 /* Feelings */,
@@ -164,6 +174,7 @@
 				6B9A54002CC95E01005FCFF2 /* Assets.xcassets */,
 				6B9A54022CC95E01005FCFF2 /* LaunchScreen.storyboard */,
 				6B9A54052CC95E01005FCFF2 /* Info.plist */,
+				6BC2CA1D2CDBB7E100D8EC6B /* GoogleService-Info.plist */,
 				6B9A53FD2CC95DFF005FCFF2 /* Meditation.xcdatamodeld */,
 			);
 			path = Meditation;
@@ -180,6 +191,7 @@
 				6B9A54172CC97AD3005FCFF2 /* GradientButton.swift */,
 				6BA6E8092CCB3E1500980CDD /* Date.swift */,
 				6B9A54632CCB2CA2005FCFF2 /* BaseTextView.swift */,
+				6BC2CA1F2CDC903100D8EC6B /* NetworkMonitor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -355,6 +367,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6BC2CA1A2CDB945100D8EC6B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				6BC2CA1B2CDB947B00D8EC6B /* WebViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		C692A4EE5BAF6D21BDF8BC4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,7 +450,9 @@
 			files = (
 				6BA6E8082CCB3BC900980CDD /* PracticeTableViewCell.xib in Resources */,
 				6B9A543D2CC98F18005FCFF2 /* Fireflies.mp3 in Resources */,
+				6BC2CA1E2CDBB7E100D8EC6B /* GoogleService-Info.plist in Resources */,
 				6B9A54012CC95E01005FCFF2 /* Assets.xcassets in Resources */,
+				6BC2CA192CDB8C4D00D8EC6B /* codemagic.yaml in Resources */,
 				6B9A54042CC95E01005FCFF2 /* Base in Resources */,
 				6B9A54442CC9B416005FCFF2 /* gentle-awareness.mp3 in Resources */,
 				6B9A541E2CC9811D005FCFF2 /* Inter-Regular.ttf in Resources */,
@@ -510,10 +532,12 @@
 				6B9A54182CC97AD3005FCFF2 /* GradientButton.swift in Sources */,
 				6B9A54612CCB2BDC005FCFF2 /* FeelingsViewController.swift in Sources */,
 				6BA6E8022CCB3B8B00980CDD /* StatisticsViewController.swift in Sources */,
+				6BC2CA1C2CDB947B00D8EC6B /* WebViewController.swift in Sources */,
 				6B9A53F92CC95DFF005FCFF2 /* MenuViewController.swift in Sources */,
 				6BA6E7FD2CCB364C00980CDD /* CoreDataManager.swift in Sources */,
 				6BA6E7FA2CCB35D300980CDD /* PracticeViewModel.swift in Sources */,
 				6B9A54562CCB0704005FCFF2 /* RootViewController.swift in Sources */,
+				6BC2CA202CDC903100D8EC6B /* NetworkMonitor.swift in Sources */,
 				6B9A543F2CC98FE1005FCFF2 /* ViewController.swift in Sources */,
 				6B9A53FF2CC95DFF005FCFF2 /* Meditation.xcdatamodeld in Sources */,
 				6B9A54102CC95EEC005FCFF2 /* Font.swift in Sources */,
@@ -686,12 +710,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Menu;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Karen.Meditation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nailssensei.WV57Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -716,12 +741,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Menu;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Karen.Meditation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nailssensei.WV57Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
